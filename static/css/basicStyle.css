@@ -208,7 +208,7 @@ body {
 
 .skip-nav {
     position: absolute;
-    top: -40px;
+    top: -1000px;
     left: 0;
     background-color: #000;
     color: #fff;
