@@ -24,7 +24,7 @@ $username = $row['username'];
         <?php
         include 'include/logged-in.php';
         ?>
-        <main>
+        <main id="main-content">
         <section class="welcome-text">
                 <h1>Welcome <?php echo $username ?></h1>
                 <h2>Have a look at the featured Items</h2>
