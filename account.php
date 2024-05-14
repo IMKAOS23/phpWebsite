@@ -21,11 +21,10 @@ $selectedGender = $row["gender_id"];
         <link rel="stylesheet" href="static/css/account.css">
     </head>
     <body>
-        <a href="#main-content" class="skip-nav">Skip to main content</a>
         <?php
         include 'include/logged-in.php';
         ?>
-        <main id="main-content">
+        <main>
             <section class="forms">
                 <?php 
                 if (isset($_POST['username'])) {
