@@ -65,7 +65,10 @@ if (isset($_POST['sign-email'], $_POST['username'], $_POST['sign-pword'], $_POST
     }
 }
 ?>
+
 <div class="modal-overlay" id="modal-overlay"></div>
+
+
 <header class="navbar-big">
     <nav class="navbar-big-buttons-left">
         <a class="navbar-link-sign-up" onclick="showSignUpForm()">Sign-Up</a>

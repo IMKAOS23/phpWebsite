@@ -46,8 +46,10 @@ class Database {
          * @return array|null Returns array containing the fetched data, or null upon failure.
          */
         $sql = "SELECT $columns FROM $table";
+
         if (!empty($where)) {
             $sql .= " WHERE $where";
+            $params = sanitizeArray($params);
         }
         if (!empty($condition)) {
             $sql .= " $condition";
@@ -79,10 +81,11 @@ class Database {
         $columns = implode(", ", array_keys($data));
         $values = ":" . implode(", :", array_keys($data));
         $sql = "INSERT INTO $table ($columns) VALUES ($values)";
+        $sanitizedData = sanitizeArray($data);
 
         try {
             $stmt = $this->pdo->prepare($sql);
-            $stmt->execute($data);
+            $stmt->execute($sanitizedData);
         } catch (PDOException $e) {
             error_log($e->getMessage());
         }
@@ -103,13 +106,14 @@ class Database {
          * @return int|null - Returns Integer of affected Rows, or null upon failure
          */
         $set = "";
-        foreach ($data as $key => $value) {
+        $sanitizedData = sanitizeArray($data);
+        foreach ($sanitizedData as $key => $value) {
             $set .= "$key = :$key, ";
         }
         $set = rtrim($set, ", ");
         $sql = "UPDATE $table SET $set WHERE $where";
 
-        $params = array_merge($data, $params);
+        $params = array_merge($sanitizedData, $params);
         try {
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute($params);
@@ -155,6 +159,22 @@ function generateRandomID(int $length = 16) {
         $randomString .= $characters[rand(0, $charactersLength - 1)];
     }
     return $randomString;
+}
+
+function sanitizeArray($data) {
+    /**
+     * Sanitize each value in an associative array using htmlspecialchars().
+     * 
+     * @param array $data - Associative array to be sanitized.
+     * 
+     * @return array - Sanitized associative array.
+     */
+    $sanitized_data = array();
+    foreach ($data as $key => $value) {
+        // Sanitize each value using htmlspecialchars()
+        $sanitized_data[$key] = is_array($value) ? sanitizeArray($value) : htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+    }
+    return $sanitized_data;
 }
 
 // Default Database Stuff needed for most if not all pages
