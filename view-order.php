@@ -31,6 +31,7 @@ if (isset($_GET["orderId"])) {
     <link rel="stylesheet" href="static/css/viewOrder.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
     <header>
         <?php 
         if (isset($_SESSION['userId'])) {
