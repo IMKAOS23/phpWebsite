@@ -205,3 +205,18 @@ body {
     border-radius: 5px;
     z-index: 1000;
   }
+
+.skip-nav {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.skip-nav:focus {
+    top: 0;
+}
