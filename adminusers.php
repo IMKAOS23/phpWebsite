@@ -19,7 +19,7 @@ if (!isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] !== true) {
 </head>
 <body>
     <a href="#main-content" class="skip-nav">Skip to main content</a>
-    <main class="align-center">
+    <main class="align-center" id="main-content">
         <?php include "include/admin.php" ?>
         <h1>Admin Users Panel</h1>
         <p>Here you can add, view, edit and delete Users</p>
