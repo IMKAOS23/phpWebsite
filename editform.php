@@ -113,6 +113,7 @@ if (isset($_GET["editTable"]) && $_GET["editTable"] === "order") {
         <link rel="stylesheet" href="static/css/admin.css">
     </head>
     <body>
+        <a href="#main-content" class="skip-nav">Skip to main content</a>
         <main>
             <?php include "include/admin.php"; ?>
             <section class="admin-form">
