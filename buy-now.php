@@ -86,7 +86,7 @@ if (isset($_SESSION["userId"])) {
         }
         ?>
     </header>
-    <main>
+    <main id="main-content">
         <section class="cart-page">
             <section class="left-block">
                 <h1>Your Item</h1>
