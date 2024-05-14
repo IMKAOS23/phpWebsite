@@ -21,6 +21,7 @@ $goTo = 'memberhome.php';
         <link rel="stylesheet" href="static/css/home.css">
     </head>
     <body>
+        <a href="#main-content" class="skip-nav">Skip to main content</a>
         <?php
         include 'include/not-logged-in.php';
         ?>
