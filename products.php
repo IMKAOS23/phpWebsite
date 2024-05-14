@@ -43,7 +43,7 @@ $offset = ($currentPage -1) * 9;
             include 'include/not-logged-in.php';
         }
         ?>
-        <main>
+        <main id="main-content">
             <h1>View Products</h1>
 
             <section class="product-container">
