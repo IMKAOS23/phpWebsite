@@ -33,6 +33,7 @@ $offset = ($currentPage -1) * 9;
         <link rel="stylesheet" href="static/css/product.css">
     </head>
     <body>
+        <a href="#main-content" class="skip-nav">Skip to main content</a>
         <?php
         // Navbar
         if (isset($_SESSION['userId'])) {
