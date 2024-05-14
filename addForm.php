@@ -71,7 +71,7 @@ if (isset($_POST["orderProduct"]) && isset($_POST["quantity"]) && isset($_POST["
     </head>
     <body>
         <a href="#main-content" class="skip-nav">Skip to main content</a>
-        <main>
+        <main id="main-content">
             <?php include "include/admin.php"; ?>
             <section class="admin-form">
                 <?php if ($_GET["add"] === "product") { ?>
