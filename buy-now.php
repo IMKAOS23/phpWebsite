@@ -75,6 +75,7 @@ if (isset($_SESSION["userId"])) {
     <link rel="stylesheet" href="static/css/buy.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
     <header>
         <?php 
         if (isset($_SESSION['userId'])) {
