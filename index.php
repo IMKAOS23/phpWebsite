@@ -25,7 +25,7 @@ $goTo = 'memberhome.php';
         <?php
         include 'include/not-logged-in.php';
         ?>
-        <main>
+        <main id="main-content">
             <!-- You will see many Sections and Articles where i am using in place of Divs -->
             <!-- However Some Divs stay due to how they have no Semantic value -->
             <section class="welcome-text">
