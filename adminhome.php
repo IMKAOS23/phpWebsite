@@ -21,7 +21,7 @@ if (!isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] !=- true) {
     <a href="#main-content" class="skip-nav">Skip to main content</a>
     <?php include "include/admin.php" ?>
 
-    <main class="align-center">
+    <main class="align-center" id="main-content">
         <h1>Welcome to the Admin Panel</h1>
         <p>Here you can add, view, edit and delete Users, Orders and products for sale</p>
 
