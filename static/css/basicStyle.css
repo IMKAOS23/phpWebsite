@@ -1,0 +1,207 @@
+/* Poppins - Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins", "sans-serif";
+}
+
+body {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.navbar-big {
+    position: relative;
+    display: flex;
+    max-width: 95vw;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 2px solid grey;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.navbar-big-buttons-left {
+    display: flex;
+}
+
+.navbar-big-buttons-left a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #494646;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 5px;
+    color: rgb(56, 56, 56);
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-big-buttons-left a:hover {
+    background-color: #ddd;
+}
+
+.navbar-big-buttons-right a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #494646;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 5px;
+    color: rgb(56, 56, 56);
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-big-buttons-right a:hover {
+    background-color: #ddd;
+}
+
+.navbar-big-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-big-logo img {
+    width: 250px;
+    height: 30px;
+}
+
+.navbar-big-form {
+    display: flex;
+    align-items: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.navbar-big-search {
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 1px solid #494646;
+}
+
+.navbar-big-search:focus {
+    border-color: transparent;
+}
+
+.navbar-big-submit {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #494646;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 5px;
+    color: rgb(56, 56, 56);
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-big-submit:hover {
+    background-color: #ddd;
+}
+
+.footer {
+    width: 100%;
+    background-color: #ddd;
+    color: rgb(56, 56, 56);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: 15px;
+}
+
+.footer-links ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.footer-links ul li {
+    display: inline-block; 
+    margin-right: 20px; 
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0; 
+}
+
+.footer-links ul li a {
+    color: rgb(56, 56, 56);
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.footer-social img {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin-right: 5px;
+}
+
+/* Used For Login, Sign-Up Form + Error and Success Messages */
+.close-button {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.error-message {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #ff6347; /* Red colour */
+    color: #fff;
+    border-radius: 5px;
+}
+
+  .success-message {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #47ff97; /* Green Colour */
+    color: #fff;
+    border-radius: 5px;
+    z-index: 1000;
+  }

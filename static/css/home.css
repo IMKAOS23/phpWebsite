@@ -1,0 +1,156 @@
+.welcome-text {
+    text-align: center;
+}
+
+.welcome-text h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.welcome-text h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.about-us {
+    padding: 50px 20px;
+    margin-top: 10px;
+    background-color: #f9f9f9; 
+}
+
+.about-us-content {
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.about-us-heading {
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+.about-us-text {
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+    color: #555; 
+}
+
+.featured-container {
+    text-align: center;
+    background-color: #fafafa; 
+    padding: 10px;
+    min-height: 650px;
+}
+
+.featured-container h3 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.featured-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    place-items: center;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    min-width: 350px;
+    min-height: 500px;
+    max-width: 350px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item h4 {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0px 10px;
+}
+
+.item h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(56,56,56);
+    margin: 0;
+    padding: 0px, 10px;
+}
+
+.item img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px;
+}
+
+.item p {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.item form {
+    display: inline;
+}
+
+.item form button {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #494646;
+    font-weight: 500;
+    font-size: 0.7rem;
+    margin: 5px;
+    color: rgb(56, 56, 56);
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.item form button:hover{
+    background-color: #ddd;
+}
+
+.view-products {
+    display: flex;
+    justify-content: right;
+    margin-right: 3%;
+}
+
+.view-products a {
+    display: block;
+    margin: 10px;
+    width: 10%;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #494646;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 5px;
+    color: rgb(56, 56, 56);
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.view-products a:hover {
+    background-color: #ddd;
+}

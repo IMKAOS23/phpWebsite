@@ -1,0 +1,25 @@
+.right-block h1 {
+    margin: 0;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-top: 75px;
+    margin-bottom: 10px;
+}
+
+.right-block h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.right-block h3 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.right-block h4 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
