@@ -19,6 +19,7 @@ $goto = "adminhome.php";
     <link rel="stylesheet" href="static/css/admin.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
     <?php include "include/admin.php" ?>
 
     <main class="align-center">
