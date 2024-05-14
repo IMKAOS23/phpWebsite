@@ -25,6 +25,7 @@ $selectedGender = $row["gender_id"];
         include 'include/logged-in.php';
         ?>
         <main>
+            <a href="#main-content" class="skip-nav">Skip to main content</a>
             <section class="forms">
                 <?php 
                 if (isset($_POST['username'])) {
