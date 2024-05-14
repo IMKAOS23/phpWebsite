@@ -22,7 +22,7 @@ $goto = "adminhome.php";
     <a href="#main-content" class="skip-nav">Skip to main content</a>
     <?php include "include/admin.php" ?>
 
-    <main class="align-center">
+    <main class="align-center" id="main-content">
         <h1>Admin Orders Panel</h1>
         <p>Here you can add, view, edit and delete Orders</p>
 
