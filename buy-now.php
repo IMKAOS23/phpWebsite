@@ -75,7 +75,7 @@ if (isset($_SESSION["userId"])) {
     <link rel="stylesheet" href="static/css/buy.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    <a href="#main-content" class="skip-nav">Skip to Main Content</a>
     <header>
         <?php 
         if (isset($_SESSION['userId'])) {
@@ -92,7 +92,7 @@ if (isset($_SESSION["userId"])) {
                 <h1>Your Item</h1>
                 <article class="item">
                     <div class="image">
-                        <img src="<?php echo $row["image_url"] ?>" alt="<?php echo $row["product_name"]?>">
+                        <img src="<?php echo $row["image_url"] ?>" alt="Photo of <?php echo $row["product_name"]?>">
                     </div>
                     <div class="text">
                         <h4><?php echo $row['product_name'] ?></h4>

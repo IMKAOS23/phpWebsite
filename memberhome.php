@@ -20,7 +20,7 @@ $username = $row['username'];
         <link rel="stylesheet" href="static/css/home.css">
     </head>
     <body>
-        <a href="#main-content" class="skip-nav">Skip to main content</a>
+        <a href="#main-content" class="skip-nav">Skip to Main Content</a>
         <?php
         include 'include/logged-in.php';
         ?>
@@ -39,7 +39,7 @@ $username = $row['username'];
                     foreach ($rows as $row) {?>
                         <article class="item">
                             <div class="content">
-                                <img src="<?php echo $row["image_url"] ?>" alt="<?php echo $row['product_name'] ?>">
+                                <img src="<?php echo $row["image_url"] ?>" alt="Photo of <?php echo $row['product_name'] ?>">
                                 <h4><?php echo $row['product_name'] ?></h4>
                                 <h5>£<?php echo $row['price'] ?></h5>
                                 <p><?php echo $row['description'] ?></p>

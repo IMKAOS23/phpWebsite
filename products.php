@@ -33,7 +33,7 @@ $offset = ($currentPage -1) * 9;
         <link rel="stylesheet" href="static/css/product.css">
     </head>
     <body>
-        <a href="#main-content" class="skip-nav">Skip to main content</a>
+        <a href="#main-content" class="skip-nav">Skip to Main Content</a>
         <?php
         // Navbar
         if (isset($_SESSION['userId'])) {
@@ -57,7 +57,7 @@ $offset = ($currentPage -1) * 9;
                 foreach ($rows as $row) { ?>
                 <article class="product">
                     <div class="content">
-                        <img src="<?php echo $row['image_url']?>">
+                        <img src="<?php echo $row['image_url']?>" alt="Photo of <?php echo $row['product_name']?>">
                         <h2><?php echo $row['product_name'] ?></h2>
                         <h3>£<?php echo $row['price'] ?></h3>
                         <p><?php echo $row['description']?></p>
@@ -65,8 +65,8 @@ $offset = ($currentPage -1) * 9;
                     <div class="buttons">
                         <form action="buy-now.php" method="GET">
                             <input type="hidden" name="productId" value="<?php echo $row['product_id'] ?>">
-                            <label for="quantity">Quantity:</label>
-                            <select name="quantity" id="quantity">
+                            <label for="quantity-<?php echo $row['product_id'] ?>">Quantity:</label>
+                            <select name="quantity" id="quantity-<?php echo $row['product_id'] ?>">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>

@@ -70,7 +70,7 @@ if (isset($_POST["orderProduct"]) && isset($_POST["quantity"]) && isset($_POST["
         <link rel="stylesheet" href="static/css/admin.css">
     </head>
     <body>
-        <a href="#main-content" class="skip-nav">Skip to main content</a>
+        <a href="#main-content" class="skip-nav">Skip to Main Content</a>
         <main id="main-content">
             <?php include "include/admin.php"; ?>
             <section class="admin-form">

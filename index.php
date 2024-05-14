@@ -44,7 +44,7 @@ $goTo = 'memberhome.php';
                         <article class="item">
                             <!-- Example of a div used due to how it offers no semantic value. used Purely for Stylistic Reasons -->
                             <div class="content">
-                                <img src="<?php echo $row["image_url"] ?>" alt="<?php echo $row['product_name'] ?>">
+                                <img src="<?php echo $row["image_url"] ?>" alt="Photo of <?php echo $row['product_name'] ?>">
                                 <h4><?php echo $row['product_name'] ?></h4>
                                 <h5>£<?php echo $row['price'] ?></h5>
                                 <p><?php echo $row['description'] ?></p>
@@ -52,8 +52,8 @@ $goTo = 'memberhome.php';
                             <div class="buttons">
                                 <form action="buy-now.php" method="GET" id="buy">
                                     <input type="hidden" name="productId" value="<?php echo $row['product_id'] ?>">
-                                    <label for="quantity">Quantity:</label>
-                                    <select name="quantity" id="quantity">
+                                    <label for="quantity-<?php echo $row['product_id'] ?>">Quantity:</label>
+                                    <select name="quantity" id="quantity-<?php echo $row['product_id'] ?>">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>

@@ -31,7 +31,7 @@ if (isset($_GET["orderId"])) {
     <link rel="stylesheet" href="static/css/viewOrder.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    <a href="#main-content" class="skip-nav">Skip to Main Content</a>
     <header>
         <?php 
         if (isset($_SESSION['userId'])) {
@@ -53,7 +53,7 @@ if (isset($_GET["orderId"])) {
                     $row = $db->select("products", "*", "product_id = :product_id", [":product_id" => $product_id], "", false);?>
                     <article class="item">
                     <div class="image">
-                        <img src="<?php echo $row["image_url"] ?>">
+                        <img src="<?php echo $row["image_url"] ?>" alt="Photo of <?php echo $row["product_name"]?>">
                     </div>
                     <div class="text">
                         <h4><?php echo $row['product_name'] ?></h4>

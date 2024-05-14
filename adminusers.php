@@ -18,7 +18,7 @@ if (!isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] !== true) {
     <link rel="stylesheet" href="static/css/admin.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    <a href="#main-content" class="skip-nav">Skip to Main Content</a>
     <main class="align-center" id="main-content">
         <?php include "include/admin.php" ?>
         <h1>Admin Users Panel</h1>
